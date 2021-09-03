@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.2 on win32)" generated="20210410 18:22:32.978" rpa="false">
+<suite id="s1" name="TestSuits" source="D:\Work\Automation\Robot\SystechHrm\Tests\TestSuits.robot">
+<kw name="Log To Console" library="BuiltIn" type="setup">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Open Browser at the Begining</arg>
+</arguments>
+<status status="PASS" starttime="20210410 18:22:33.184" endtime="20210410 18:22:33.185"></status>
+</kw>
+<test id="s1-t1" name="Testcase 5: Perform Monthly Manual Attendances">
+<kw name="Start TestCase Execution" library="CommonFunctionality" type="setup">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" starttime="20210410 18:22:33.186" endtime="20210410 18:22:33.186"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:33.186" level="INFO">Opening browser 'chrome' to base url 'http://demo.systechpayroll.com/'.</msg>
+<status status="PASS" starttime="20210410 18:22:33.186" endtime="20210410 18:22:36.178"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210410 18:22:36.178" endtime="20210410 18:22:36.301"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_UserName}</arg>
+<arg>${USERNAME}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:36.301" level="INFO">Typing text 'SUSER' into text field 'name:LoginName'.</msg>
+<status status="PASS" starttime="20210410 18:22:36.301" endtime="20210410 18:22:36.370"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${txt_Password}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:36.371" level="INFO">Typing text '232323' into text field 'name:Password'.</msg>
+<status status="PASS" starttime="20210410 18:22:36.370" endtime="20210410 18:22:36.441"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${btnLogIn}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:36.441" level="INFO">Clicking element 'xpath://*[@id='loginDiv']/form/div[3]/input'.</msg>
+<status status="PASS" starttime="20210410 18:22:36.441" endtime="20210410 18:22:43.150"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:33.186" endtime="20210410 18:22:43.150"></status>
+</kw>
+<kw name="Click Attendances Left Menu" library="Menu">
+<doc>Attendances Left Menu</doc>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>On Leave (This Month)</arg>
+</arguments>
+<status status="PASS" starttime="20210410 18:22:43.152" endtime="20210410 18:22:43.205"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Left_Menu_Attendances_Link}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:43.206" level="INFO">Clicking element 'xpath://*[@id='500']'.</msg>
+<status status="PASS" starttime="20210410 18:22:43.206" endtime="20210410 18:22:43.357"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:43.151" endtime="20210410 18:22:43.358"></status>
+</kw>
+<kw name="Click Attendances Top Menu" library="Menu">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Top_Menu_Attendances_Link}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:43.360" level="INFO">Clicking element 'xpath://*[@id='38']'.</msg>
+<status status="PASS" starttime="20210410 18:22:43.359" endtime="20210410 18:22:43.447"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:43.358" endtime="20210410 18:22:43.447"></status>
+</kw>
+<kw name="Click Monthly Manual Attendance" library="Menu">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Monthly_Manual_Attendance_Link}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:43.449" level="INFO">Clicking element 'link:Monthly Manual Attendances'.</msg>
+<status status="PASS" starttime="20210410 18:22:43.448" endtime="20210410 18:22:46.533"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:43.448" endtime="20210410 18:22:46.533"></status>
+</kw>
+<kw name="Select Employee" library="Monthly_Manual_Attendances">
+<arguments>
+<arg>${EmployeeID}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="cmbEmployee_chosen"]</arg>
+</arguments>
+<msg timestamp="20210410 18:22:46.534" level="INFO">Clicking element 'xpath://*[@id="cmbEmployee_chosen"]'.</msg>
+<status status="PASS" starttime="20210410 18:22:46.534" endtime="20210410 18:22:46.698"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="cmbEmployee_chosen"]/div/div/input</arg>
+<arg>${EmployeeID}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:46.698" level="INFO">Typing text 'a119' into text field 'xpath://*[@id="cmbEmployee_chosen"]/div/div/input'.</msg>
+<status status="PASS" starttime="20210410 18:22:46.698" endtime="20210410 18:22:46.789"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>xpath://*[@id="cmbEmployee_chosen"]/div/div/input</arg>
+<arg>\ue007</arg>
+</arguments>
+<msg timestamp="20210410 18:22:46.791" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:46.791" endtime="20210410 18:22:46.819"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:46.534" endtime="20210410 18:22:46.819"></status>
+</kw>
+<kw name="Select Year" library="Monthly_Manual_Attendances">
+<arguments>
+<arg>${YEAR}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="cmbYear_chosen"]</arg>
+</arguments>
+<msg timestamp="20210410 18:22:46.820" level="INFO">Clicking element 'xpath://*[@id="cmbYear_chosen"]'.</msg>
+<status status="PASS" starttime="20210410 18:22:46.819" endtime="20210410 18:22:47.176"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="cmbYear_chosen"]/div/div/input</arg>
+<arg>${YEAR}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.177" level="INFO">Typing text '2022' into text field 'xpath://*[@id="cmbYear_chosen"]/div/div/input'.</msg>
+<status status="PASS" starttime="20210410 18:22:47.176" endtime="20210410 18:22:47.244"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>xpath://*[@id="cmbYear_chosen"]/div/div/input</arg>
+<arg>\ue007</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.244" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.244" endtime="20210410 18:22:47.271"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:46.819" endtime="20210410 18:22:47.271"></status>
+</kw>
+<kw name="Select Month" library="Monthly_Manual_Attendances">
+<arguments>
+<arg>${Month}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="cmbMonth_chosen"]</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.272" level="INFO">Clicking element 'xpath://*[@id="cmbMonth_chosen"]'.</msg>
+<status status="PASS" starttime="20210410 18:22:47.272" endtime="20210410 18:22:47.442"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="cmbMonth_chosen"]/div/div/input</arg>
+<arg>${Month}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.443" level="INFO">Typing text 'January' into text field 'xpath://*[@id="cmbMonth_chosen"]/div/div/input'.</msg>
+<status status="PASS" starttime="20210410 18:22:47.443" endtime="20210410 18:22:47.512"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>xpath://*[@id="cmbMonth_chosen"]/div/div/input</arg>
+<arg>\ue007</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.512" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.512" endtime="20210410 18:22:47.545"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:47.272" endtime="20210410 18:22:47.545"></status>
+</kw>
+<kw name="Select InTime" library="CommonFunctionality">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${txtInTime}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.546" level="INFO">Clicking element 'xpath://*[@id="InTime"]'.</msg>
+<status status="PASS" starttime="20210410 18:22:47.545" endtime="20210410 18:22:47.600"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtInTime}</arg>
+<arg>${BackSpace}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.601" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.601" endtime="20210410 18:22:47.626"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtInTime}</arg>
+<arg>${BackSpace}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.626" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.626" endtime="20210410 18:22:47.648"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtInTime}</arg>
+<arg>${BackSpace}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.649" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.649" endtime="20210410 18:22:47.672"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtInTime}</arg>
+<arg>${BackSpace}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.672" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.672" endtime="20210410 18:22:47.709"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtInTime}</arg>
+<arg>\ue01a</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.709" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.709" endtime="20210410 18:22:47.733"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtInTime}</arg>
+<arg>\ue023</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.733" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.733" endtime="20210410 18:22:47.753"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtInTime}</arg>
+<arg>\ue01a</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.753" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.753" endtime="20210410 18:22:47.778"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtInTime}</arg>
+<arg>\ue01a</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.778" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.778" endtime="20210410 18:22:47.810"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:47.545" endtime="20210410 18:22:47.810"></status>
+</kw>
+<kw name="Select OutTime" library="CommonFunctionality">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${txtOutTime}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.811" level="INFO">Clicking element 'xpath://*[@id="OutTime"]'.</msg>
+<status status="PASS" starttime="20210410 18:22:47.811" endtime="20210410 18:22:47.878"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtOutTime}</arg>
+<arg>${BackSpace}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.879" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.879" endtime="20210410 18:22:47.907"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtOutTime}</arg>
+<arg>${BackSpace}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.907" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.907" endtime="20210410 18:22:47.929"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtOutTime}</arg>
+<arg>${BackSpace}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.929" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.929" endtime="20210410 18:22:47.952"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtOutTime}</arg>
+<arg>${BackSpace}</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.952" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.952" endtime="20210410 18:22:47.989"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtOutTime}</arg>
+<arg>\ue01b</arg>
+</arguments>
+<msg timestamp="20210410 18:22:47.990" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:47.990" endtime="20210410 18:22:48.012"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtOutTime}</arg>
+<arg>\ue022</arg>
+</arguments>
+<msg timestamp="20210410 18:22:48.012" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:48.012" endtime="20210410 18:22:48.037"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtOutTime}</arg>
+<arg>\ue01a</arg>
+</arguments>
+<msg timestamp="20210410 18:22:48.038" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:48.038" endtime="20210410 18:22:48.059"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>${txtOutTime}</arg>
+<arg>\ue01a</arg>
+</arguments>
+<msg timestamp="20210410 18:22:48.060" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20210410 18:22:48.060" endtime="20210410 18:22:48.084"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:47.810" endtime="20210410 18:22:48.084"></status>
+</kw>
+<kw name="Click Load" library="Monthly_Manual_Attendances">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="btnLoad"]</arg>
+</arguments>
+<msg timestamp="20210410 18:22:48.085" level="INFO">Clicking element 'xpath://*[@id="btnLoad"]'.</msg>
+<status status="PASS" starttime="20210410 18:22:48.085" endtime="20210410 18:22:48.179"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20210410 18:22:49.179" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210410 18:22:48.179" endtime="20210410 18:22:49.180"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:48.085" endtime="20210410 18:22:49.180"></status>
+</kw>
+<kw name="Click Select All Days" library="Monthly_Manual_Attendances">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="unchkall"]</arg>
+</arguments>
+<msg timestamp="20210410 18:22:49.183" level="INFO">Clicking element 'xpath://*[@id="unchkall"]'.</msg>
+<status status="PASS" starttime="20210410 18:22:49.183" endtime="20210410 18:22:49.356"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:49.182" endtime="20210410 18:22:49.356"></status>
+</kw>
+<kw name="Scroll Down To Buttom" library="Monthly_Manual_Attendances">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+</arguments>
+<msg timestamp="20210410 18:22:49.358" level="INFO">Executing JavaScript:
+window.scrollTo(0,document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210410 18:22:49.357" endtime="20210410 18:22:49.363"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:49.357" endtime="20210410 18:22:49.363"></status>
+</kw>
+<kw name="Click Save Change" library="Monthly_Manual_Attendances">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="btnSave"]</arg>
+</arguments>
+<msg timestamp="20210410 18:22:49.364" level="INFO">Clicking element 'xpath://*[@id="btnSave"]'.</msg>
+<status status="PASS" starttime="20210410 18:22:49.364" endtime="20210410 18:22:49.410"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:49.363" endtime="20210410 18:22:49.410"></status>
+</kw>
+<kw name="Accept Alert" library="CommonFunctionality">
+<kw name="Handle Alert" library="SeleniumLibrary">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>accept</arg>
+</arguments>
+<status status="PASS" starttime="20210410 18:22:49.411" endtime="20210410 18:22:49.415"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:22:49.411" endtime="20210410 18:22:49.415"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<msg timestamp="20210410 18:23:09.417" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20210410 18:22:49.416" endtime="20210410 18:23:09.418"></status>
+</kw>
+<kw name="Click Successful Notification Box" library="Monthly_Manual_Attendances">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id="ui_notifIt_btn"]</arg>
+</arguments>
+<status status="PASS" starttime="20210410 18:23:09.421" endtime="20210410 18:23:09.449"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath://*[@id="ui_notifIt_btn"]</arg>
+</arguments>
+<status status="PASS" starttime="20210410 18:23:09.449" endtime="20210410 18:23:09.469"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="ui_notifIt_btn"]</arg>
+</arguments>
+<msg timestamp="20210410 18:23:09.469" level="INFO">Clicking element 'xpath://*[@id="ui_notifIt_btn"]'.</msg>
+<status status="PASS" starttime="20210410 18:23:09.469" endtime="20210410 18:23:09.505"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:23:09.420" endtime="20210410 18:23:09.505"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210410 18:23:12.507" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210410 18:23:09.506" endtime="20210410 18:23:12.507"></status>
+</kw>
+<kw name="Finish TestCase Execution" library="CommonFunctionality" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210410 18:23:12.511" endtime="20210410 18:23:14.607"></status>
+</kw>
+<status status="PASS" starttime="20210410 18:23:12.510" endtime="20210410 18:23:14.607"></status>
+</kw>
+<doc>Load Imployee Page and Register new Employees</doc>
+<tags>
+<tag>Test</tag>
+</tags>
+<status status="PASS" starttime="20210410 18:22:33.185" endtime="20210410 18:23:14.608" critical="yes"></status>
+</test>
+<kw name="Log To Console" library="BuiltIn" type="teardown">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>close browser at the Ending</arg>
+</arguments>
+<status status="PASS" starttime="20210410 18:23:14.613" endtime="20210410 18:23:14.615"></status>
+</kw>
+<doc>Systech HTM End to End Testing</doc>
+<status status="PASS" starttime="20210410 18:22:32.979" endtime="20210410 18:23:14.615"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Test</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="TestSuits">TestSuits</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210410 18:22:33.179" level="ERROR">Error in file 'D:\Work\Automation\Robot\SystechHrm\Resources\PageObjects\Payroll\Salary_Process.Robot' on line 3: Variable file '..\Payroll\PageObjects\Locators.py' does not exist.</msg>
+<msg timestamp="20210410 18:22:33.183" level="ERROR">Error in file 'D:\Work\Automation\Robot\SystechHrm\Resources\PageObjects\Leave\Leave_App.Robot' on line 3: Variable file '..\Leave\PageObjects\Locators.py' does not exist.</msg>
+<msg timestamp="20210410 18:22:46.791" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.244" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.512" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.601" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.626" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.649" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.672" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.709" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.733" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.753" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.778" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.879" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.907" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.929" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.952" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:47.990" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:48.012" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:48.038" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20210410 18:22:48.060" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+</errors>
+</robot>

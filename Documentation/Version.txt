@@ -1,0 +1,35 @@
+
+Version:1.1
+Last Update Date: 10-04-2021   (DD-MM-YYYY)
+Status:Current
+
+Description : implicit and explicit wait in only attendance
+----------------
+
+Module feature:
+===============
+
+LogIn:
+
+Personel:
+---------
+Employee Register  :Add ,Edit
+Increment: With fix ammount , Feb
+Promotion: With fix ammount , March
+
+
+Leave:
+------
+Leave App: 1 day .
+
+Attendance :
+------------
+Monthly Manual Attendance : jan ,Wait
+
+
+Payroll:
+--------
+Salary Process: Jan
+
+
+Note: wait issue is not solved.
