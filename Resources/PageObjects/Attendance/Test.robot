@@ -35,13 +35,14 @@ Select Accounts Buyer
 Input Effected date
     [Arguments]  ${IncrementEffectedDate}
    # SeleniumLibrary.Wait Until Element Is Enabled    Id:Date
-   # Input Text  Id:Date  ${IncrementEffectedDate}
-    #Sleep  1
-    #Click Element  Id:RefNo      #To hide calander box so that I can click Load button
-#Click Ref No
     Click Element  xpath://*[@id="Date"]
     Input Text  Id:Date  ${IncrementEffectedDate}
-    Double Click Element  xpath://body/div[3]/div[1]/div[1]/button[2]   #Double click home
+    Double Click Element  xpath://body/div[3]/div[1]/div[1]/button[2]
+
+   # Sleep  1
+
+    #Click Element  Id:RefNo      #To hide calander box so that I can click Load button
+#Click Ref No
 
 Click Load
     Wait Until Element Is Visible  Id:btnLoad
