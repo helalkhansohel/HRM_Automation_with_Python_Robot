@@ -1,5 +1,5 @@
 
-Version:1.1
+Version:1.2
 Last Update Date: 16-10-2021   (DD-MM-YYYY)
 Status:Current
 
@@ -33,7 +33,8 @@ Salary Process: Jan
 
 
 Note:
-Next:Data Driven
+Next:
+1.Separate the test cases.
 
 2. promotion and Attendance wait default issue.
        *wait till notification come .

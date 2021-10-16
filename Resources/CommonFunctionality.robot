@@ -17,7 +17,7 @@ ${BackSpace}  \ue003
 
 *** Keywords ***
 Start TestCase Execution
-    SET Selenium Implicit Wait  40s
+    SET Selenium Implicit Wait  60s
     Open Browser    ${URL}  ${BROWSER}
 
     Maximize browser window

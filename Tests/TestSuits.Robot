@@ -300,9 +300,9 @@ Testcase 5:Perform Test
     #sleep  3
     #Execute Javascript  window.scrollTo(0, document.getElementsByClassName('dataTables_scrollBody')[0].scrollHeight)
     Execute Javascript  window.scrollTo(0, document.getElementById('iTableElement').scrollHeight)
-    sleep  4
+   # Set Selenium Implicit Wait  60s
     Increment.Click Save
-    #Sleep  1
+   # Set Selenium Implicit Wait  60s
     sleep  3
 
    # Increment.Click OK To Alert
