@@ -1,17 +1,17 @@
 
 *** Settings ***
 Documentation  Systech HTM End to End Testing
-Resource  ../Resources/CommonFunctionality.robot
-Resource  ../Resources/PageObjects/Menu.robot
+Resource  ../../Resources/CommonFunctionality.robot
+Resource  ../../Resources/PageObjects/Menu.robot
 
-Resource  ../Resources/PageObjects/Personnel/Employee_Information.robot
-Resource  ../Resources/PageObjects/Personnel/Increment.robot
-Resource  ../Resources/PageObjects/Personnel/Promotion.robot
-Resource  ../Resources/PageObjects/Attendance/Monthly_Manual_Attendances.robot
-Resource  ../Resources/PageObjects/Payroll/Salary_Process.Robot
-Resource  ../Resources/PageObjects/Leave/Leave_App.Robot
+Resource  ../../Resources/PageObjects/Personnel/Employee_Information.robot
+Resource  ../../Resources/PageObjects/Personnel/Increment.robot
+Resource  ../../Resources/PageObjects/Personnel/Promotion.robot
+Resource  ../../Resources/PageObjects/Attendance/Monthly_Manual_Attendances.robot
+Resource  ../../Resources/PageObjects/Payroll/Salary_Process.Robot
+Resource  ../../Resources/PageObjects/Leave/Leave_App.Robot
 
-Resource  ../Resources/PageObjects/Attendance/Test.robot
+Resource  ../../Resources/PageObjects/Attendance/Test.robot
 
 Test Setup  CommonFunctionality.Start TestCase Execution  #Run before each test case
 Test Teardown  CommonFunctionality.Finish TestCase Execution  #Run after each test case
@@ -314,4 +314,4 @@ Testcase 5:Perform Test
 
 
 #robot -d Results Tests/TestSuits.robot
-#robot  -i Test -d Results Tests/TestSuits.robot
+#robot  -i Test -d Results Tests/Personnel/Promotion_Single_Employee.Robot

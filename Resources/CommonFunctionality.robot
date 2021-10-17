@@ -2,6 +2,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Variables  ./Locators.py
+
 *** Variables ***
 ${BROWSER}  chrome
 ${url}   http://demo.systechpayroll.com/
