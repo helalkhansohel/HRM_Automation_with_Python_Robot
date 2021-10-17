@@ -314,4 +314,8 @@ Testcase 5:Perform Test
 
 
 #robot -d Results Tests/TestSuits.robot
-#robot  -i Test -d Results Tests/Test.robot
+#robot  -i Test -d Results Tests/TestSuits.robot
+
+#robot -d Results Tests/TestSuits.robot
+#robot  -i Test -d Results Tests/TestSuits.robot
+#robot  -i Test -d Results Tests/TestMe.robot
